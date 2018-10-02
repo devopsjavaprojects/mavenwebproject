@@ -81,12 +81,12 @@
 
 	<distributionManagement>
 	    <repository>
-	      <id>nexus</id>
+	      <id>Mynexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
 	      <url>http://localhost:8081/srikanth/repository/maven-releases/</url>
 	    </repository>
 	    <snapshotRepository>
-	      <id>nexus</id>
+	      <id>Mynexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
 	      <url>http://localhost:8081/srikanth/repository/maven-snapshots/</url>
 	    </snapshotRepository>
