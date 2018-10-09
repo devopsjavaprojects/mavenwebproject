@@ -4,19 +4,13 @@ node {
 	   
 	stage('Checkout'){
 
-          checkout scm
+          git changelog: false, credentialsId: 'd7cbf2db-f31b-4d15-b617-848db570426c', url: 'https://github.com/devopsjavaprojects/mavenwebproject.git'
        }
 
        stage('BuildArtifact'){
-
-         // sh 'mvn install'
 	       
-	       sh 'mvn clean'
+	      bat 'mvn clean install'
        }
-	   
-      stage('Sonar') {
-                    //add stage sonar
-                   // sh 'mvn sonar:sonar'
-                }
+	
        
 }
