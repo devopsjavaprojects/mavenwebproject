@@ -8,9 +8,12 @@ node {
        }
 
        stage('BuildArtifact'){
-	       
+	        
 	      bat 'mvn clean install'
        }
+	stage('startbuild-for-stage'){
+		build 'stagejob-type-freestyle'
+	}
 	
        
 }
